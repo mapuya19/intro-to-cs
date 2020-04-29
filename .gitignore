@@ -1,0 +1,7 @@
+*.iml
+*.idea
+*.pdf
+*.png
+*.zip
+# Project exclude paths
+/out/
