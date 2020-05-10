@@ -17,7 +17,7 @@ public class Weather {
                     String read = input.nextLine();
                     // System.out.println(read);
                     String title = read.substring(read.indexOf("<title>") + 7, read.indexOf("</title>"));
-                    if (title.contains("Little")) {
+                    if (title.contains("Weather")) {
                         System.out.println();
                     }
                     else {
