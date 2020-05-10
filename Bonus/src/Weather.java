@@ -1,8 +1,6 @@
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Weather {
     public static void main(String[] args) {
