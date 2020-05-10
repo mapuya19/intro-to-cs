@@ -1,4 +1,4 @@
-public class Triangle {
+public class Triangle extends GeometricObject{
     private int base;
     private int height;
     private int side1;
@@ -19,11 +19,11 @@ public class Triangle {
     }
 
     public Triangle(int base, int side1, int side2) throws IllegalTriangleException {
-        if (base + side1 > side2)
+        if ((base + side1) < side2)
             throw new IllegalTriangleException("Sum of any two sides must be greater than third side!");
-        else if (base + side2 > side1)
+        if ((base + side2) < side1)
             throw new IllegalTriangleException("Sum of any two sides must be greater than third side!");
-        else if (side1 + side2 > base)
+        if ((side1 + side2) < base)
             throw new IllegalTriangleException("Sum of any two sides must be greater than third side!");
         else {
             this.base = base;
